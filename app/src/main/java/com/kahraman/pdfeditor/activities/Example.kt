@@ -1,10 +1,11 @@
-package com.kahraman.pdfeditor
+package com.kahraman.pdfeditor.activities
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.kahraman.pdfeditor.R
 
 class Example : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

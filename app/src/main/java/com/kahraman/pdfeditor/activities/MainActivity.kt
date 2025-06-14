@@ -1,4 +1,4 @@
-package com.kahraman.pdfeditor
+package com.kahraman.pdfeditor.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.kahraman.pdfeditor.activities.Example
+import com.kahraman.pdfeditor.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         listView.setOnItemClickListener { _, _, position, _ ->
             val intent = when (itemList[position]) {
                 "PDF Viewer" -> Intent(this, Example::class.java)
-                "Concatenate PDFs" -> Intent(this, Example::class.java)
+                "Concatenate PDFs" -> Intent(this, ConcatenatePdfs::class.java)
                 "Split PDF" -> Intent(this, Example::class.java)
                 "PDF From Images" -> Intent(this, Example::class.java)
                 "Create PDF" -> Intent(this, Example::class.java)
